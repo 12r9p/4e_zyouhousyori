@@ -1,13 +1,13 @@
 /***************************************************/
 /* ニュートン法のプログラム newton2.c            */
-/* f(x) = x^3 - 3x + 1                            */
+/* f(x) = x^4 - 3x + 1                            */
 /***************************************************/
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
 
-#define FNF(x) ((x) * (x) * (x) - 3.0 * (x) + 1.0)
-#define DNF(x) (3.0 * (x) * (x) - 3.0)
+#define FNF(x) ((x) * (x) * (x) * (x) - 3.0 * (x) + 1.0)
+#define DNF(x) (4.0 * (x) * (x) * (x) - 3.0)
 #define MAX_ITER 100000
 
 typedef struct
