@@ -105,7 +105,7 @@ def step_spline():
     # Plot spline
     plt.figure(figsize=(6, 4))
     plt.plot(df["x"], df["y"], label="スプライン補間 (20等分)", color=EXCEL_BLUE, linewidth=1.5)
-    plt.scatter([0.0, 1.0, 2.0], [1.0, 3.0, 2.0], color=EXCEL_ORANGE, s=40, zorder=5, label="データ点")
+    plt.scatter([0.0, 1.0, 2.0], [1.0, 3.0, 2.0], color=EXCEL_ORANGE, s=80, zorder=5, label="データ点")
     plt.title("3次スプライン補間")
     plt.xlabel("x")
     plt.ylabel("y")
@@ -183,7 +183,7 @@ def step_least_squares():
     # Plot 8-2
     plt.figure(figsize=(6, 4))
     plt.plot(df_2["x"], df_2["y"], label="最小二乗近似式: y = 2.401/x + 0.398x", color=EXCEL_BLUE, linewidth=1.5)
-    plt.scatter([0.2, 0.5, 1.0, 2.0, 4.0, 8.0, 10.0], [12.1, 4.9, 2.9, 2.1, 2.1, 3.4, 4.3], color=EXCEL_ORANGE, s=40, zorder=5, label="データ点")
+    plt.scatter([0.2, 0.5, 1.0, 2.0, 4.0, 8.0, 10.0], [12.1, 4.9, 2.9, 2.1, 2.1, 3.4, 4.3], color=EXCEL_ORANGE, s=80, zorder=5, label="データ点")
     plt.title("最小二乗近似")
     plt.xlabel("x")
     plt.ylabel("y")

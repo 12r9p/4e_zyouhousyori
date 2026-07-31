@@ -88,8 +88,8 @@ int main(void)
     printf("\nエンターキーを押せば数表を出力します．\n");
     scanf("%c",&zz);
     /**  グラフを描くための準備（数表を出力）**/
-    h = (x[n] - x[1]) / 50.0;      xx = x[1];
-    for(i=0; i<=50; i++){
+    h = (x[n] - x[1]) / 200.0;      xx = x[1];
+    for(i=0; i<=200; i++){
         ffv(f, xx, &fx);   ffv(g, xx, &gx);
         yy = d[1] * fx + d[2] * gx ;
         printf("%10.6lf  %10.6lf\n",xx,yy);
